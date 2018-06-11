@@ -1,9 +1,71 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="row tnc-main">
-    <div class="col">
-        <img src="~/images/main_logo_white.png" alt="Welcome to The Next Company" class="img-fluid mx-auto d-block" />
-    </div>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+
+
+<div class="header pt-4 pt-lg-3 mx-0 mx-lg-4">
+        <a href="#"><img src="~/images/main_logo.png" alt="Welcome to The Next Company" class="logo" href="#"></a>
+        <img src="~/images/cafe.svg" alt="Agenda un café con nosotros" class="coffee float-right align-bottom pt-2 pt-lg-3 mr-3 mr-lg-2">
+</div>
+
+<div class="container contenido mx-0 mx-lg-4">
+
+        <div class="row pt-5">
+            <div class="col pt-5">
+                <h1 class="guion">-</h1>
+            </div>
+        </div>
+
+        <div class="row pb-5 mb-5 d-none d-lg-block">
+            <div class="col">
+                <h2 class="sitioencontruccion">Nuestro sitio está<br>
+                en construcción...</h2>
+            </div>
+        </div>
+        <div class="row mb-5 d-lg-none">
+            <div class="col">
+                <h2 class="sitioencontruccionmobile">Nuestro sitio está<br>
+                en construcción...</h2>
+            </div>
+        </div>
+
+        <div class="row pt-5 pt-lg-4">
+            <div class="col mt-5 pt-5">
+                <btn class="btnagenda p-3 px-lg-4 py-lg-3 mb-2 mt-5">Agendá un café con nosotros</btn>
+            </div>
+            <div class="col-auto float-right d-none d-lg-block align-self-end">
+                <p class="text-right font-italic coolstuff mb-0">Building Cool Stuff</p>
+            </div>
+        </div>
+        <div class="row fixed-bottom ml-3 mb-5 d-lg-none">
+            <div class="col">
+                <p class="font-italic coolstuff">Building Cool Stuff</p>
+            </div>
+        </div>
+
+        <!-- 
+            <div class="row pt-0 pt-lg-4 d-flex align-items-end">
+            <div class="col agenda mt-5 d-none d-md-block">
+                <p class=" mb-2 mt-5">Igual podés agendar un café con nosotros</p>
+                <p class="mailing mb-0 align-middle py-2">hola@thenextco.net</p>
+            </div>
+            <div class="col agenda mt-5 d-lg-none">
+                <div class="row pt-5">
+                    <div class="col">
+                        <btn class=" btnagenda p-3 mb-2 mt-5">Agendá un café con nosotros</btn>
+                    </div>
+                </div>
+                <div class="row fixed-bottom ml-3 mb-5">
+                    <div class="col">
+                        <p class="font-italic coolstuff">Building Cool Stuff</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto float-right d-none d-lg-block mt-5">
+                <p class="text-right font-italic coolstuff">Building Cool Stuff</p>
+            </div>
+        </div> 
+        -->
 </div>
