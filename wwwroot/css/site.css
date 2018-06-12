@@ -6,51 +6,159 @@
 body {
   font-family: "Fira Sans", sans-serif;
   background-color: #f4f4f0;
+  font-weight: 300;
 }
 
 .logo {
-  max-height: 50px;
+  max-width: 12rem;
+  cursor: pointer;
+}
+.coffee {
+  max-width: 2rem;
+  cursor: pointer;
 }
 
 .contenido {
   max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h1 {
   color: #f05a22;
   font-size: 3rem;
 }
+
 .sitioencontruccion {
   color: #0c2342;
-  font-size: 4rem;
-  font-weight: lighter !important;
+  font-size: 3.5rem;
+  font-weight: 300 !important;
 }
 
-/* COSAS VIEJAS */
-
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-
-/* Carousel */
-.carousel-caption p {
-  font-size: 20px;
-  line-height: 1.4;
+.sitioencontruccionmobile {
+  color: #0c2342;
+  font-size: 2rem;
+  font-weight: 300 !important;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+.btnagenda {
+  background-color: #f05a22;
+  border-radius: 30px;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.btnagenda:hover {
+  background-color: #d44d1c;
+}
+
+.coolstuff {
+  color: #8b8b8b;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.coolstuff:hover {
+  color: #0c2342;
+}
+
+/* OVERLAY */
+
+.overlay-agenda {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f05a22;
+  background-color: rgba(240, 90, 34, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: white;
+}
+
+.overlay-agenda h4 {
+  color: white;
+}
+
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 60%;
+}
+
+.overlay-agenda a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-agenda a:hover,
+.overlay-agenda a:focus {
+  color: #8b8b8b;
+}
+
+.overlay-agenda .closebtn {
+  font-size: 60px;
+  line-height: 30px;
+}
+
+input {
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  height: 40px;
+  color: #0c2342;
+  padding-left: 10px;
 }
 
-/* QR code generator */
-#qrCode {
-  margin: 15px;
+textarea {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  height: 40px;
+  color: #0c2342;
+  padding-left: 10px;
+  line-height: 40px;
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-  /* Hide captions */
-  .carousel-caption {
-    display: none;
+#send {
+  background-color: #0c2342 !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+#send :hover {
+  background-color: #09172b !important;
+}
+
+input::placeholder {
+  color: #8b8b8b;
+  font-weight: 300;
+}
+
+textarea::placeholder {
+  color: #8b8b8b;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay-agenda {
+    background-color: #f36a38;
+  }
+  .overlay-content {
+    top: 7%;
+    width: 80%;
+  }
+  .overlay-agenda a {
+    font-size: 20px;
+  }
+  .overlay-agenda .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
