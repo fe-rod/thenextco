@@ -11,17 +11,10 @@ body {
 
 .logo {
   max-width: 12rem;
-  cursor: pointer;
 }
 .coffee {
   max-width: 2rem;
   cursor: pointer;
-}
-
-.contenido {
-  max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 h1 {
@@ -40,7 +33,10 @@ h1 {
   font-size: 2rem;
   font-weight: 300 !important;
 }
-
+.fixedbottom {
+  position: fixed;
+  bottom: 5rem;
+}
 .btnagenda {
   background-color: #f05a22;
   border-radius: 30px;
@@ -56,7 +52,9 @@ h1 {
 .coolstuff {
   color: #8b8b8b;
   font-size: 1rem;
-  cursor: pointer;
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
 }
 
 .coolstuff:hover {
@@ -98,7 +96,7 @@ h1 {
 
 .overlay-agenda a:hover,
 .overlay-agenda a:focus {
-  color: #8b8b8b;
+  color: #0c2342;
 }
 
 .overlay-agenda .closebtn {
@@ -145,6 +143,10 @@ textarea::placeholder {
   font-weight: 300;
 }
 
+#subject {
+  height: 130px;
+}
+
 @media only screen and (max-width: 768px) {
   .overlay-agenda {
     background-color: #f36a38;
@@ -160,5 +162,8 @@ textarea::placeholder {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+  #subject {
+    height: 80px;
   }
 }
